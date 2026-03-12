@@ -1,0 +1,5 @@
+selenium
+pytest
+requests
+locust
+webdriver-manager
