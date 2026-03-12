@@ -16,35 +16,36 @@ Bu depo, Senior QA Engineer pozisyonu teknik değerlendirmesi için hazırlanan 
 ## 🚀 Kurulum ve Çalıştırma
 
 1. **Sanal ortamı hazırlayın:**
-   ```bash
+   
    python3 -m venv venv
    source venv/bin/activate
    pip install -r requirements.txt
+
+   
 **UI Testlerini çalıştırın (Chrome):
 
-Bash
+
 pytest ui_tests/tests/test_insider_careers.py -v --browser=chrome
 
 
    --Firefox için:
 
-   Bash
+   
    pytest ui_tests/tests/test_insider_careers.py -v --browser=firefox
 
    
    --Microsoft Edge için:
 
-   Bash
+   
    pytest ui_tests/tests/test_insider_careers.py -v --browser=edge
+   
 
 **API Testlerini çalıştırın:
 
-Bash
 pytest api_tests/test_petstore_api.py -v
 
 **Yük Testini çalıştırın (Simülasyon):
 
-Bash
 locust -f load_tests/locustfile.py --headless -u 1 -r 1 -t 1m
 
 
