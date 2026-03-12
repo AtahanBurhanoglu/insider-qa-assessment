@@ -25,6 +25,18 @@ Bu depo, Senior QA Engineer pozisyonu teknik değerlendirmesi için hazırlanan 
 Bash
 pytest ui_tests/tests/test_insider_careers.py -v --browser=chrome
 
+
+   --Firefox için:
+
+   Bash
+   pytest ui_tests/tests/test_insider_careers.py -v --browser=firefox
+
+   
+   --Microsoft Edge için:
+
+   Bash
+   pytest ui_tests/tests/test_insider_careers.py -v --browser=edge
+
 **API Testlerini çalıştırın:
 
 Bash
