@@ -20,18 +20,23 @@ Bu depo, Senior QA Engineer pozisyonu teknik değerlendirmesi için hazırlanan 
    python3 -m venv venv
    source venv/bin/activate
    pip install -r requirements.txt
-UI Testlerini çalıştırın (Chrome):
+**UI Testlerini çalıştırın (Chrome):
 
 Bash
 pytest ui_tests/tests/test_insider_careers.py -v --browser=chrome
-API Testlerini çalıştırın:
+
+**API Testlerini çalıştırın:
 
 Bash
 pytest api_tests/test_petstore_api.py -v
-Yük Testini çalıştırın (Simülasyon):
+
+**Yük Testini çalıştırın (Simülasyon):
 
 Bash
 locust -f load_tests/locustfile.py --headless -u 1 -r 1 -t 1m
+
+
+
 🛠️ Teknik Zorluklar ve Çözümler
 Dinamik UI Yönetimi: Insider'dan Lever'a geçiş sürecinde karşılaşılan çerez engelleri ve dinamik dropdown yapısı, JavaScript Executor ve Explicit Waits kullanılarak stabil hale getirilmiştir.
 
